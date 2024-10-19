@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Responsive design</title>
+</head>
+<body>
+    <nav class="nav__grid">
+        <div class="nav__background">
+            <h1 class="nav__title">Responsive design</h1>
+            <div class="nav__links">
+                <ul>
+                    <li><a href="#">sdfs</a></li>
+                    <li><a href="#">sdfs</a></li>
+                    <li><a href="#">sdfs</a></li>
+                    <li><a href="#">sdfs</a></li>
+                </ul>
+                <button id="nav__button">Nav</button>
+            </div>
+        </div>
+    </nav>
+    <section class="container__header">
+        <div class="section__header">
+            <h1>Welcome to our responsive website</h1>
+            <p>Here we provide a good resonsive layout</p>
+        </div>
+        <div class="section__search">
+            <input id="search">
+        </div>
+    </section>
+    <section class="container__columns">
+        <div class="grid__containers">
+            <div class="containers">1</div>
+            <div class="containers">2</div>
+            <div class="containers">3</div>
+            <!-- <div class="containers">4</div>
+            <div class="containers">5</div>
+            <div class="containers">6</div> -->
+        </div>
+    </section>
+    <section class="container__form">
+        <h1>Feel free to use our responsive website</h1>
+        <div class="section__form">
+            <form>
+                <label>Name</label><input>
+                <label>Surname</label><input>
+                <label>Email</label><input>
+                <label>Phone</label><input>
+                <button id="submit">Submit</button>
+            </form>
+            <div class="form-info">
+                <h3>Sign up for our newslister123123</h3>
+                <h3>Sign up for our newslister</h3>
+                <h3>Sign up for our newslister123211234123532</h3>
+            </div>
+        </div>
+    </section>
+    <section class="container__location">
+        <div class="section__location">
+            <div class="info-location">
+                <h3>You can find us here!!!</h3>
+                <h3>You can find us here!!!</h3>
+                <h3>You can find us here!!!</h3>
+            </div>
+            <div class="location-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d37384.38746319524!2d28.76113820082483!3d47.03883032199209!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c97d8b3b0b2d21%3A0x97cbc1b0f3821c40!2sMussels%20Seafood%20%26%20Wine!5e0!3m2!1sen!2s!4v1728909885414!5m2!1sen!2s"   loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+    <script>
+        const navToggle = document.getElementById('nav__button');
+    const navLinks = document.querySelector('.nav__links ul');
+    
+    navToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('open');
+    });
+        </script>
+</body>
+</html>

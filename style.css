@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+body{
+    background-color:whitesmoke;
+}
+
+
+.nav__grid{
+    position: fixed;
+    background-color: beige;
+    width: 100%;
+    padding: 10px;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+}
+.nav__background{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.nav__background h1{
+    margin: 10px;
+}
+
+.nav__links ul{
+    list-style: none;
+    align-items: center;
+    display: flex;
+}
+
+.nav__links a{
+    text-decoration: none;
+    margin: 10px;
+    transition: 0.2s;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#nav__button{
+    height: 40px;
+    width: 60px;
+    background-color: antiquewhite;
+    border: none;
+    cursor: pointer;
+    display: none;
+}
+
+.container__header{
+    height: 500px;
+    padding: 10rem 4rem 6rem 4rem;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    background-image: url("bobobx.PNG");
+    background-size: cover;
+    color: aliceblue;
+    position: relative;
+}
+
+.section__header{
+    font-size: 20px;
+}
+
+.section__header p{
+    margin-top: 10px;
+    font-size: 15px; 
+}
+
+#search{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -25px;
+    width: 70%;
+    padding: 15px;
+    text-align: center;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: rgb(0, 0, 0);
+    color: aliceblue;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+.container__columns{
+    margin-bottom: 4rem;
+}
+
+.grid__containers{
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    justify-content: center;
+}
+.containers{
+    padding: 30px;
+    margin: 10px;
+    background-color: antiquewhite;
+    border-radius: 10px;
+}
+
+.container__form{
+    border-radius: 20px;
+    background-color: antiquewhite;
+    margin: 3rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    text-align: center;
+}
+
+.section__form{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.container__form form{
+    text-align: center;
+    display: grid;
+    justify-content: center;
+    margin: 20px;
+}
+
+.container__form h1{
+    font-size: 35px;
+    padding: 1rem;
+}
+
+.container__form form button{
+    background-color: rgb(253, 216, 160);
+    margin-top: 1rem;
+    border: none;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.form-info{
+    text-align: center;
+    align-content: center;
+    background-color: aliceblue;
+    margin: 1.5rem;
+    border-radius: 10px;
+}
+
+form label{
+    margin-top: 20px
+}
+
+form input{
+    font-size: 20px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    padding: 5px;
+}
+
+.container__location{
+    background-color: antiquewhite;
+    margin: 4rem;
+    border-radius: 20px;
+}
+
+.section__location{
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.info-location{
+    text-align: center;
+    align-content: center;
+    background-color: aliceblue;
+    margin: 1rem;
+    border-radius: 15px;
+    height: 100%;
+}
+
+.location-map{
+    height: 100%;
+}
+
+.location-map iframe{
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+}
+
+/* here we optimise the website */
+@media screen and (max-width: 768px) {
+
+    .nav__links ul{
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        right: 0;
+        top: 64px;
+        width: 100%;
+        background-color:rgb(245, 245, 220);
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s ease;
+    }
+
+    #nav__button{
+        display: block;
+    }
+    .nav__links li{
+        margin: 20px;
+        display: block;
+    }
+    .nav__links ul.open{
+        max-height: 300px;
+    }
+    .grid__containers{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .section__form{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .form-info{
+        font-size: 15px;
+    }
+    .container__form{
+        margin: 10px;
+    }
+    .container__form h1{
+        margin: 1rem;
+    }
+    .section__location{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .container__location{
+        margin: 1rem;
+    }
+    .location-map{
+        padding: 20px;
+    }
+}
